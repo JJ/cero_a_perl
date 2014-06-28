@@ -1,2 +1,0 @@
-#Aprende git
-#Pablo Hinojosa y JJ Merelo
