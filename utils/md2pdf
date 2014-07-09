@@ -6,12 +6,12 @@
 ficheros=""
 for fichero in $( ls ??.*.md ???.md)
 do
-    ficheros="$fichero $ficheros" 
+    ficheros="$ficheros $fichero" 
 done
 
 echo $ficheros
 
-pandoc --template=plantilla.latex \
+pandoc --template=cero_a_perl.latex \
     -V language=spanish -V mainlang=spanish \
     -V author='JJ Merelo' -V title='De cero a Perl'\
     -V documentclass=book\
