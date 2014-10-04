@@ -4,15 +4,15 @@
 # que copiar a su directorio de plantillas de Pandoc.
 
 ficheros=""
-for fichero in $( ls ??.*.md ???.md)
+for fichero in $( ls ??.*.md)
 do
     ficheros="$ficheros $fichero" 
 done
 
 echo $ficheros
 
-pandoc --template=cero_a_perl.latex \
-    -V language=spanish -V mainlang=spanish \
+pandoc --template=/home/jmerelo/Libros/cero_a_perl/utils/cero_a_perl.latex \
+    -V language=spanish -V mainlang=spanish -V lang=spanish  \
     -V author='JJ Merelo' -V title='De cero a Perl'\
     -V documentclass=book\
     -S --latex-engine=xelatex  \
