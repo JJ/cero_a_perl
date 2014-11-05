@@ -1,0 +1,11 @@
+user "root";
+password "vagrant";
+port "2222";
+pass_auth;
+
+group box => "localhost";
+
+desc "Instala emacs";
+task "emacs", group => "box", sub {
+     install package => [ "emacs", "emacs-el" ]; # Incluye dependencias
+};
