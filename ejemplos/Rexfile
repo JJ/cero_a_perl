@@ -1,4 +1,4 @@
-user "root";
+user "root"; # -*- cperl-mode -*-
 password "vagrant";
 port "2222";
 pass_auth;
