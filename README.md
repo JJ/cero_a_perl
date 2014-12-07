@@ -1,7 +1,3 @@
----
-layout: index
----
-
 
 De 0 a Perl
 ===========
