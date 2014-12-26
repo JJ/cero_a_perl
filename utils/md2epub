@@ -1,12 +1,11 @@
 #!/bin/bash
 
 
-
+files=??.*.md
+echo $files
 pandoc -S --toc --epub-metadata=../utils/metadata.xml --epub-stylesheet=../utils/cero_a_perl.css \
-    -o aprendegit.epub aprendegit.txt \
-    prologo.md  introduccion.md  uso_basico.md \
-    solucion_problemas.md mas_usos.md \
-    github.md          ganchos.md
+    -o cero_a_perl.epub cero_a_perl.txt $files
+
 
 
 
