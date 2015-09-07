@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Necesita su plantilla LaTeX específica, que está en ../utils y que tendrás
-# que copiar a su directorio de plantillas de Pandoc.
+# Tendrás que cambiar el camino a la plantilla, que tiene que ser absoluto
 
 ficheros=""
 for fichero in $( ls ??.*.md)
