@@ -1,0 +1,16 @@
+user "root"; #Principalmente para Fedora
+password "vagrant";
+port "2222";
+pass_auth;
+
+group box => "localhost";
+
+desc "Instala CPAN";
+task "cpan", group => "box", sub {
+     install package => [ "perl-CPAN" ]; 
+};
+
+task "listutils", group => "box", sub { #para perlbrew
+     my $output = run "cpan List::Util";
+     say $output;
+}
